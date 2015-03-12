@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8D8584A1-72CC-46E9-869A-4C7CE9ED327F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YLYBoxViewDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>806D111FA7A9D8FD37B046CD89B9407F227D969A</key>
+		<string>https://github.com/xllyll/YLYBoxViewDemo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>YLYBoxViewDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>806D111FA7A9D8FD37B046CD89B9407F227D969A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xllyll/YLYBoxViewDemo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>806D111FA7A9D8FD37B046CD89B9407F227D969A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>806D111FA7A9D8FD37B046CD89B9407F227D969A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>YLYBoxViewDemo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

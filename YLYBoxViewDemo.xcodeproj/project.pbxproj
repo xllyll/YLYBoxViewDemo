@@ -17,6 +17,7 @@
 		5075475B1AB17CA4004178C1 /* YLYBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075475A1AB17CA4004178C1 /* YLYBoxView.m */; };
 		5075475E1AB17EAF004178C1 /* check_false.png in Resources */ = {isa = PBXBuildFile; fileRef = 5075475C1AB17EAF004178C1 /* check_false.png */; };
 		5075475F1AB17EAF004178C1 /* check_true.png in Resources */ = {isa = PBXBuildFile; fileRef = 5075475D1AB17EAF004178C1 /* check_true.png */; };
+		507547611AB180F3004178C1 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 507547601AB180F3004178C1 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5075475A1AB17CA4004178C1 /* YLYBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLYBoxView.m; sourceTree = "<group>"; };
 		5075475C1AB17EAF004178C1 /* check_false.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_false.png; sourceTree = "<group>"; };
 		5075475D1AB17EAF004178C1 /* check_true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_true.png; sourceTree = "<group>"; };
+		507547601AB180F3004178C1 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				5075473D1AB17C10004178C1 /* Main.storyboard */,
 				507547401AB17C10004178C1 /* Images.xcassets */,
 				507547421AB17C10004178C1 /* LaunchScreen.xib */,
+				507547601AB180F3004178C1 /* README.md */,
 				507547331AB17C10004178C1 /* Supporting Files */,
 			);
 			path = YLYBoxViewDemo;
@@ -234,6 +237,7 @@
 			files = (
 				5075473C1AB17C10004178C1 /* ViewController.m in Sources */,
 				5075475B1AB17CA4004178C1 /* YLYBoxView.m in Sources */,
+				507547611AB180F3004178C1 /* README.md in Sources */,
 				507547391AB17C10004178C1 /* AppDelegate.m in Sources */,
 				507547361AB17C10004178C1 /* main.m in Sources */,
 			);
