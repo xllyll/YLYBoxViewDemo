@@ -3,3 +3,6 @@
 
 
 ![image](https://github.com/xllyll/YLYBoxViewDemo/blob/master/page1.png?raw=true)
+
+全选
+![image](https://github.com/xllyll/YLYBoxViewDemo/blob/master/page2.png?raw=true)
