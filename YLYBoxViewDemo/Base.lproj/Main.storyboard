@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -55,10 +56,10 @@
                                 <exclude reference="gCh-H3-hkc"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="DuG-sW-oNv"/>
                                 <exclude reference="3af-xR-tPR"/>
                                 <exclude reference="RqC-8A-EQg"/>
                                 <exclude reference="cNh-vd-z1W"/>
-                                <exclude reference="DuG-sW-oNv"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -66,13 +67,16 @@
                                 <include reference="gCh-H3-hkc"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="DuG-sW-oNv"/>
                                 <include reference="3af-xR-tPR"/>
                                 <include reference="RqC-8A-EQg"/>
                                 <include reference="cNh-vd-z1W"/>
-                                <include reference="DuG-sW-oNv"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="boxView" destination="gCh-H3-hkc" id="Cbn-Wz-JWn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

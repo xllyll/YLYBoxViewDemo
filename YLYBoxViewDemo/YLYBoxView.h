@@ -16,7 +16,10 @@
  *
  */
 @property (strong , nonatomic)NSMutableArray *timeData;//定时的数据源
-
-
+/**
+ *刷新数据
+ *index:星期
+ */
+-(void)relaodData:(NSInteger)index;
 
 @end

@@ -406,4 +406,7 @@
     UIGraphicsEndImageContext();
     return theImage;
 }
+-(void)relaodData:(NSInteger)index{
+    [self reloadRightTableView:index];
+}
 @end
