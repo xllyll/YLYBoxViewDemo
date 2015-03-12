@@ -14,6 +14,9 @@
 		507547411AB17C10004178C1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507547401AB17C10004178C1 /* Images.xcassets */; };
 		507547441AB17C10004178C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 507547421AB17C10004178C1 /* LaunchScreen.xib */; };
 		507547501AB17C10004178C1 /* YLYBoxViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075474F1AB17C10004178C1 /* YLYBoxViewDemoTests.m */; };
+		5075475B1AB17CA4004178C1 /* YLYBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5075475A1AB17CA4004178C1 /* YLYBoxView.m */; };
+		5075475E1AB17EAF004178C1 /* check_false.png in Resources */ = {isa = PBXBuildFile; fileRef = 5075475C1AB17EAF004178C1 /* check_false.png */; };
+		5075475F1AB17EAF004178C1 /* check_true.png in Resources */ = {isa = PBXBuildFile; fileRef = 5075475D1AB17EAF004178C1 /* check_true.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,10 @@
 		507547491AB17C10004178C1 /* YLYBoxViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YLYBoxViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5075474E1AB17C10004178C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5075474F1AB17C10004178C1 /* YLYBoxViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLYBoxViewDemoTests.m; sourceTree = "<group>"; };
+		507547591AB17CA4004178C1 /* YLYBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLYBoxView.h; sourceTree = "<group>"; };
+		5075475A1AB17CA4004178C1 /* YLYBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLYBoxView.m; sourceTree = "<group>"; };
+		5075475C1AB17EAF004178C1 /* check_false.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_false.png; sourceTree = "<group>"; };
+		5075475D1AB17EAF004178C1 /* check_true.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_true.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +90,10 @@
 			children = (
 				507547371AB17C10004178C1 /* AppDelegate.h */,
 				507547381AB17C10004178C1 /* AppDelegate.m */,
+				507547591AB17CA4004178C1 /* YLYBoxView.h */,
+				5075475A1AB17CA4004178C1 /* YLYBoxView.m */,
+				5075475C1AB17EAF004178C1 /* check_false.png */,
+				5075475D1AB17EAF004178C1 /* check_true.png */,
 				5075473A1AB17C10004178C1 /* ViewController.h */,
 				5075473B1AB17C10004178C1 /* ViewController.m */,
 				5075473D1AB17C10004178C1 /* Main.storyboard */,
@@ -201,6 +212,8 @@
 			files = (
 				5075473F1AB17C10004178C1 /* Main.storyboard in Resources */,
 				507547441AB17C10004178C1 /* LaunchScreen.xib in Resources */,
+				5075475E1AB17EAF004178C1 /* check_false.png in Resources */,
+				5075475F1AB17EAF004178C1 /* check_true.png in Resources */,
 				507547411AB17C10004178C1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5075473C1AB17C10004178C1 /* ViewController.m in Sources */,
+				5075475B1AB17CA4004178C1 /* YLYBoxView.m in Sources */,
 				507547391AB17C10004178C1 /* AppDelegate.m in Sources */,
 				507547361AB17C10004178C1 /* main.m in Sources */,
 			);
@@ -346,8 +360,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YLYBoxViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,8 +372,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YLYBoxViewDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
