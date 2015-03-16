@@ -183,50 +183,53 @@
             cell = [tableView dequeueReusableCellWithIdentifier:cellID3];
             if (!cell) {
                 cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellID3];
-            }
-            NSInteger btWidth = (_right_table_width-3*4)/3;
-            NSInteger btHight = K_rightTableView_hight-6;
-            NSArray *array = _right_table_data[indexPath.section];
-            
-            NSInteger l = [array count]/3;
-            if ([_right_table_data[indexPath.section] count]%3!=0) {
-                l++;
-            }
-            
-            for (int i = 0; i<l; i++) {
-                if (i==l-1) {
-                    NSInteger number = [_right_table_data[indexPath.section] count]%3;
-                    if (number==0) {
-                        number = 3;
-                    }
-                    for (int k = 0; k<number; k++) {
-                        UIButton *bt = [[UIButton alloc]initWithFrame:CGRectMake(btWidth*k+3*(k+1), K_rightTableView_hight*i+3, btWidth, btHight)];
-                        NSString *string =array[i*3+k];
-                        [bt setTitle:string forState:UIControlStateNormal];
-                        bt.backgroundColor = [UIColor whiteColor];
-                        [bt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-                        [bt addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-                        [bt setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:54.0/255.0 green:179.0/255.0 blue:190.0/255.0 alpha:1.0f]]  forState:UIControlStateSelected];
-                        [bt setBackgroundImage:[self createImageWithColor:[UIColor whiteColor]]  forState:UIControlStateNormal];
-                        bt.tag = i*3+k+1;
-                        [cell addSubview:bt];
-                        [buttons addObject:bt];
-                    }
-                }else{
-                    for (int k = 0; k<3; k++) {
-                        UIButton *bt = [[UIButton alloc]initWithFrame:CGRectMake(btWidth*k+3*(k+1), K_rightTableView_hight*i+5, btWidth, btHight)];
-                        [bt setTitle:array[i*3+k] forState:UIControlStateNormal];
-                        bt.backgroundColor = [UIColor whiteColor];
-                        [bt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-                        [bt setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:54.0/255.0 green:179.0/255.0 blue:190.0/255.0 alpha:1.0f]]  forState:UIControlStateSelected];
-                        [bt setBackgroundImage:[self createImageWithColor:[UIColor whiteColor]]  forState:UIControlStateNormal];
-                        [bt addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
-                        bt.tag = i*3+k+1;
-                        [cell addSubview:bt];
-                        [buttons addObject:bt];
+                
+                
+                NSInteger btWidth = (_right_table_width-3*4)/3;
+                NSInteger btHight = K_rightTableView_hight-6;
+                NSArray *array = _right_table_data[indexPath.section];
+                
+                NSInteger l = [array count]/3;
+                if ([_right_table_data[indexPath.section] count]%3!=0) {
+                    l++;
+                }
+                
+                for (int i = 0; i<l; i++) {
+                    if (i==l-1) {
+                        NSInteger number = [_right_table_data[indexPath.section] count]%3;
+                        if (number==0) {
+                            number = 3;
+                        }
+                        for (int k = 0; k<number; k++) {
+                            UIButton *bt = [[UIButton alloc]initWithFrame:CGRectMake(btWidth*k+3*(k+1), K_rightTableView_hight*i+3, btWidth, btHight)];
+                            NSString *string =array[i*3+k];
+                            [bt setTitle:string forState:UIControlStateNormal];
+                            bt.backgroundColor = [UIColor whiteColor];
+                            [bt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+                            [bt addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+                            [bt setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:54.0/255.0 green:179.0/255.0 blue:190.0/255.0 alpha:1.0f]]  forState:UIControlStateSelected];
+                            [bt setBackgroundImage:[self createImageWithColor:[UIColor whiteColor]]  forState:UIControlStateNormal];
+                            bt.tag = i*3+k+1;
+                            [cell addSubview:bt];
+                            [buttons addObject:bt];
+                        }
+                    }else{
+                        for (int k = 0; k<3; k++) {
+                            UIButton *bt = [[UIButton alloc]initWithFrame:CGRectMake(btWidth*k+3*(k+1), K_rightTableView_hight*i+5, btWidth, btHight)];
+                            [bt setTitle:array[i*3+k] forState:UIControlStateNormal];
+                            bt.backgroundColor = [UIColor whiteColor];
+                            [bt setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+                            [bt setBackgroundImage:[self createImageWithColor:[UIColor colorWithRed:54.0/255.0 green:179.0/255.0 blue:190.0/255.0 alpha:1.0f]]  forState:UIControlStateSelected];
+                            [bt setBackgroundImage:[self createImageWithColor:[UIColor whiteColor]]  forState:UIControlStateNormal];
+                            [bt addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+                            bt.tag = i*3+k+1;
+                            [cell addSubview:bt];
+                            [buttons addObject:bt];
+                        }
                     }
                 }
             }
+            
         }
         //无色
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
